@@ -1,5 +1,5 @@
 
-console.log("clinet side javascript loaded")
+//console.log("clinet side javascript loaded")
 
 
 const weatherform = document.querySelector('form')
