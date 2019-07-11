@@ -13,7 +13,7 @@ weatherform.addEventListener('submit',(e) => {
     const search = document.querySelector('input')
     console.log(search.value)
 
-    const url = 'http://localhost:3000/weather?address='+search.value
+    const url = '/weather?address='+search.value
 
     msgone.textContent =  "Loading..."
     msgtwo.textContent =  ''

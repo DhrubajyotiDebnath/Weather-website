@@ -9,6 +9,8 @@ const partialpath = path.join(__dirname,'../templates/partials')
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 app.set('view engine','hbs')
 app.set('views',viewpath)
 hbs.registerPartials(partialpath)
@@ -81,6 +83,6 @@ app.get('*',(req,res) => {
     })
 })
 
-app.listen(3000,() => {
-    console.log("Strting the Server on port 3000...")
+app.listen(port,() => {
+    console.log("Strting the Server on port " + port + "...")
 })
