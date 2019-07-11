@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <title>Home Page</title>
+        <link rel='icon' href='Image/52248.png'>
+        <link rel="stylesheet" href="/css/style.css">
+        
+    </HEAD>
+    <BODY>
+        <div class='main-content'>
+            {{>header}}
+            <p> Use this site to get your weather</p>
+            <form>
+                <input placeholder="Location">
+                <button>Search</button>
+            </form>
+        </div>
+
+        <p id = 'msg-1'></p>       
+        <p id = 'msg-2'></p>       
+
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+    </BODY>
+</HTML>
