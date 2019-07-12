@@ -44,7 +44,7 @@ const forecast = (latitide,longitude,callback) => {
                 const data = { MaxTemp,
                         MinTemp,
                         summary,
-                        CurrentTemp: temperature+' Degree Fahrenheit',
+                        CurrentTemp: temperature,
                         Rain: precipProbability+ '%' 
                }
                callback(undefined,data)

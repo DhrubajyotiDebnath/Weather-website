@@ -24,9 +24,16 @@ fetch(url).then((response) =>
     if (data.error){
         msgone.textContent =  data.error
     } else
-    {   
+    {   if (weatherform.elements["tempunit"].value === 'F'){
+        cTemp = data.forecast.CurrentTemp
+        cUnit = ' Degree Fahrenheit'
+    } else {
+        cTemp = ((data.forecast.CurrentTemp - 32)*5)/9
+        cTemp = cTemp.toPrecision(4)
+        cUnit = ' Degree Celcius'
+    }
         msgone.textContent = 'Forecast for    ' + data.location
-        msgtwo.textContent = data.forecast.summary+ '. Current Temperatur '+ data.forecast.CurrentTemp + '   with '+data.forecast.Rain+' chance of rain'
+        msgtwo.textContent = data.forecast.summary+ '. Current Temperature '+ cTemp + cUnit + '   with '+data.forecast.Rain+' chance of rain'
     }
     }
     )
