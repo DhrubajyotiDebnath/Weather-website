@@ -26,7 +26,7 @@ fetch(url).then((response) =>
     } else
     {   
         msgone.textContent = 'Forecast for    ' + data.location
-        msgtwo.textContent = data.forecast.summary+ '. Current Temperatur -'+ data.forecast.CurrentTemp + '   with '+data.forecast.Rain+' chance of rain'
+        msgtwo.textContent = data.forecast.summary+ '. Current Temperatur '+ data.forecast.CurrentTemp + '   with '+data.forecast.Rain+' chance of rain'
     }
     }
     )

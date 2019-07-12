@@ -28,7 +28,7 @@ const geolocation = (place,callback) => {
     }
 
 const forecast = (latitide,longitude,callback) => {
-        const url = 'https://api.darksky.net/forecast/a3ccc4e4c09945deaba6e042e5ed1b53/'+ latitide +','+ longitude +'?unit=si&lang=en'
+        const url = 'https://api.darksky.net/forecast/a3ccc4e4c09945deaba6e042e5ed1b53/'+ latitide +','+ longitude +'?lang=en'
            
         //console.log(url1)
         request({url,json:true},(error,response) =>
